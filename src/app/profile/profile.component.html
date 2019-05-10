@@ -6,8 +6,8 @@
 <div *ngIf="profile">
   <div class="card">
     <div class="card-header">
-      {{profile.name}} <small>({{profile.login}})</small>
-     <span *ngIf = "profile.company">works at{{profile.company}}. </span>
+      {{profile.name}} <small>({{profile.login}}) </small>
+     <span *ngIf = "profile.company">works at {{profile.company}}. </span>
 
     </div>
     <div class="card-body">
@@ -25,7 +25,7 @@
         <div class="col-sm-4">
           <div>
             <p>
-              <span class="badge badge-primary">{{profile.followers}} Followers. </span>
+              <span class="badge badge-primary">{{profile.followers}} Followers </span>
               <span class="badge badge-success">{{profile.following}} Following </span>
               <span class="badge badge-dark">{{profile.public_gists}} Public gists </span>
               <span class="badge badge-info">{{profile.public_repos}} Public repos </span>

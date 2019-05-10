@@ -12,7 +12,6 @@ export class ProfileService {
   private username:string;
   private clientid: "";
   private clientsecret:string = environment.Access_Token
-  // private clientsecret: "a08f757f39d4c32a41bf3c8228d25bc51e232845";
 
   constructor(private http: HttpClient) {
     console.log("service is now ready!");
