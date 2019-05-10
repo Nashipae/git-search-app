@@ -1,3 +1,21 @@
-<p>
-  profile works!
-</p>
+<div *ngIf="profile">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{profile.name}} <small>({{profile.login}})</small>
+     <span *ngIf = "profile.company">works at{{profile.company}}. </span> Has
+      {{profile.followers}} followers.
+    </div>
+    <div class="panel body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile image">
+        </div>
+        <div class="col-sm-5">
+          <ul class="list group">
+            <li class="list-group-items">{{profile.bio}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
