@@ -1,3 +1,7 @@
+<div class="banner">Git Search App</div>
+<!-- <h1>Git Search App</h1> -->
+
+
 <form action="" class="search-form">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
@@ -30,7 +34,7 @@
               <span class="badge badge-dark">{{profile.public_gists}} Public gists </span>
               <span class="badge badge-info">{{profile.public_repos}} Public repos </span>
             </p>
-            <p><a href="{{profile.html_url}}" target ="_blank" class="btn badge-success btn-sm">View profile on Github</a></p>
+            <p><a href="{{profile.html_url}}" data-toggle="popover" title="Github project repo" data-content="Access the project details." target ="_blank" class="btn badge-success btn-sm">View profile on Github</a></p>
           </div>
           <div class="card">
             <div class="card-header">

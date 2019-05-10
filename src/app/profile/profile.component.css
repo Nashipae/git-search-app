@@ -1,4 +1,13 @@
 .search-form{
   padding: 40px;
-
+}
+/* body{
+  background-image: url("src/assets/background_image4.jpg");
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner{
+  background-image: url("src/assets/banner_image.jpg");
+} */
+.col-sm-4 span{
+  margin-left: 5px;
 }

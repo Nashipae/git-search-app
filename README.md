@@ -1,27 +1,41 @@
-# GitSearchApp
+# Git Search App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+#### Git Search App is a web app that users can use to search for git repositories and display them in a summarised form.
 
-## Development server
+#### By *Naomi Wariara*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+Git Search App is a web app that users can use to search for git repositories and display them in a summarised form. It has the following functionalities.
+1. The user can search for a github user and see their profile.
+2. The user can view summarised description of the repos.
+3. The user can access the repos through links.
+4. The user can view following and followers of the github repository.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Specs
+| Behavior        | Input           | Outcome  |
+| ------------- |:-------------:| -----:|
+| Github user search by users | Type the name of the github user. | Display user name, his/her repos and a description of the repos.  |
+| Display details of a repo | Click view more details button.  | Repo on github is opened. |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Setup/Installation Requirements
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. To access the game use the link: https://nashipae.github.io/git-search-app/
+2. You may open the link using Google Chrome, Firefox or Internet Explorer.
+3. Click on the links to access content within them.
 
-## Running end-to-end tests
+## Known Bugs
+There are no known bugs as at now.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Technologies Used
+ Technlogy used during the development of this website is  Angular 7, CSS, JavaScript and JQuery to bring out the display on the webpage.
 
-## Further help
+## Support and contact details
+In case you'd like to improve the app you may reach me on nashipae.digital@gmail.com. You may also fork the project from my GitHub repository https://github.com/Nashipae/quotes-app.git.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+MIT
+
+Copyright (c) 2019 Nashipae
