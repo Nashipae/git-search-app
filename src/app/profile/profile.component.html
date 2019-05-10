@@ -1,21 +1,31 @@
 <div *ngIf="profile">
-  <div class="panel panel-default">
-    <div class="panel-heading">
+  <div class="card">
+    <div class="card-header">
       {{profile.name}} <small>({{profile.login}})</small>
-     <span *ngIf = "profile.company">works at{{profile.company}}. </span> Has
-      {{profile.followers}} followers.
+     <span *ngIf = "profile.company">works at{{profile.company}}. </span>
+
     </div>
-    <div class="panel body">
+    <div class="card-body">
       <div class="row">
         <div class="col-sm-3">
-          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile image">
+          <img src="{{profile.avatar_url}}" class="rounded-circle img-fluid" alt="Profile image">
         </div>
         <div class="col-sm-5">
           <ul class="list group">
             <li class="list-group-items" *ngIf=profile.bio>{{profile.bio}}</li><li class="list-group-items" *ngIf=profile.hireable>{{profile.hireable}}Available for hire.</li>
-            <li class="list-group-items" *ngIf=profile.repos_url><a href="{{profile.repos_url}}" target="_blank"></a></li>
+            <li class="list-group-items" *ngIf=profile.repos_url>"{{profile.repos_url}}"</li>
             <li class="list-group-items" *ngIf=profile.email><a href="emailto:{{profile.email}}"></a></li>
           </ul>
+        </div>
+        <div class="col-sm-4">
+          <div>
+            <p>
+              <span class="badge badge-primary">{{profile.followers}} Followers.</span>
+              <span class="badge badge-secondary">Followings:{{profile.following}}Following</span>
+              <span class="badge badge-dark">{{profile.public_gists}}Public gists</span>
+              <span class="badge badge-info">{{profile.public_repos}} Public repos.</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
