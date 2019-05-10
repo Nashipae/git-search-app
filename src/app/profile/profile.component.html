@@ -29,10 +29,12 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <h3 class="card-body">
-
-              </h3>
-
+              <h3 class="card-title">Repos</h3>
+            </div>
+            <div class="card-body" *ngFor="let repo of repos">
+              <p>
+                {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View this project on Github</a>
+              </p>
             </div>
 
           </div>
