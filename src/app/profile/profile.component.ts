@@ -9,7 +9,7 @@ import {ProfileService} from '../profile.service';
 export class ProfileComponent implements OnInit {
 
   profile: object;
-  repos: any[];
+  repos: object;
   username: string;
 
   constructor(private profileService: ProfileService) {
