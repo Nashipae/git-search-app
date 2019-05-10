@@ -33,7 +33,10 @@
             </div>
             <div class="card-body" *ngFor="let repo of repos">
               <p>
-                {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View this project on Github</a>
+                {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning float-right">View this project on Github</a>
+              </p>
+              <p class="clearfix">
+                {{repo.description}}
               </p>
             </div>
 
