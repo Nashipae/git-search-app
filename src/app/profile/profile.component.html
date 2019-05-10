@@ -12,7 +12,9 @@
         </div>
         <div class="col-sm-5">
           <ul class="list group">
-            <li class="list-group-items">{{profile.bio}}</li>
+            <li class="list-group-items" *ngIf=profile.bio>{{profile.bio}}</li><li class="list-group-items" *ngIf=profile.hireable>{{profile.hireable}}Available for hire.</li>
+            <li class="list-group-items" *ngIf=profile.repos_url><a href="{{profile.repos_url}}" target="_blank"></a></li>
+            <li class="list-group-items" *ngIf=profile.email><a href="emailto:{{profile.email}}"></a></li>
           </ul>
         </div>
       </div>
