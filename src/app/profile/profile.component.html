@@ -1,7 +1,10 @@
 <div class="banner">Git Search App</div>
 <!-- <h1>Git Search App</h1> -->
-
-
+  <app-menu></app-menu>
+<hr>
+<div>
+  Do you ever wonder how you can get a summary of people's Github profile information? Then you are at home with the Git Search App which offers you a summary of Github users profiles. Please use the search field below to get your info.
+</div>
 <form action="" class="search-form">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
@@ -10,7 +13,7 @@
 <div *ngIf="profile">
   <div class="card">
     <div class="card-header">
-      {{profile.name}} <small>({{profile.login}}) </small>
+      {{profile.name|uppercase}} <small>({{profile.login}}) </small>
      <span *ngIf = "profile.company">works at {{profile.company}}. </span>
 
     </div>
