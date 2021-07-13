@@ -2,7 +2,7 @@
 
 #### Git Search App is a web app that users can use to search for git repositories and display them in a summarised form.
 
-#### By *Naomi Wariara*
+#### By *Nashipae*
 
 ## Description
 
